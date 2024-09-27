@@ -1,19 +1,19 @@
-**Predicting Customer Churn**
+# Predicting Customer Churn**
 ## Identifying Customers that are Susceptible to Churn in order to Enhance Retention Strategies and Boost Business Growth
 
-**Project Learning Objectives**
+### Project Learning Objectives
 The primary objective of this project is to develop a predictive model that can accurately forecast customer churn within the telecommunications industry. 
 Specifically, the project aims to leverage historical customer data and relevant features to create a machine learning model capable of identifying customers who are likely to churn. 
 The model's performance will be assessed using appropriate evaluation metrics.
 
-**Learning Skills**
+### Learning Skills
 - Python Proficiency
 - Data Preprocessing
 - Exploratory Data Analysis
 - Model Development
 - Churn Prediction
 
-**A quick overview of the dataset**
+### A quick overview of the dataset
 
 - `CustomerID`: A unique identifier for each customer.
 - `Name`: The name of the customer.
@@ -61,7 +61,7 @@ The model's performance will be assessed using appropriate evaluation metrics.
 
 As you can see from the above, the dataset has alot of nested columns which we drilled into in the feature engineering phase of the project but Our target feature is 'ChurnLabel'.
 
-**Data Preprocessing & Feature Engineering**
+### Data Preprocessing & Feature Engineering
 
 In the Data Preprocessing and Feature Engineering step, we aim to achieve a few things:
 - create new features that may have predictive power.
@@ -79,7 +79,7 @@ From our correlation analysis, we saw that:
 - `PaymentHistoryNoOfLatePayments` exhibits some high positive correlation (0.9) with the `ChurnLabel`,
 - `PaymentHistoryAvgNoOfLatePayments` exhibits some high positive correlation (0.9) with the `ChurnLabel`,
 
-**Modelling**
+### Modelling
 
 The `ChurnLabel` was engineered with two models, to see the best performing one. The models are:
 - LogisticRegression,
@@ -103,7 +103,7 @@ From the decision matrix of both models,
 - They both performed well at predicting customers that did not churn,
 - Decision Tree performed better at predicting customers that churned.
 
-**Conclusion**
+### Conclusion
 
 The parameters that were most important in determining whether or not a customer will churn are:
 - the number of Service Interactions the customer has had with customer service through Call, Email and Chat,
